@@ -1,0 +1,311 @@
+/* Estilos Globais */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #56A3A6; /* Azul Céu */
+}
+
+/* Navbar */
+.navbar-custom {
+    background-color: #56A3A6; /* Azul Céu */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #FEC601; /* Amarelo Vibrante para hover/active */
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Ajuste conforme o tamanho do seu logo */
+}
+
+/* Hero Section (Página Inicial) */
+.hero-section {
+    background: url('https://placehold.co/1920x700/56A3A6/FFFFFF?text=Destino+Incrível') no-repeat center center; /* Placeholder com cores do tema */
+    background-size: cover;
+    color: white;
+    padding: 120px 0;
+    text-align: center;
+    position: relative;
+}
+.hero-section::before { /* Overlay para melhor legibilidade do texto */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.hero-section .container {
+    position: relative; /* Para que o conteúdo fique acima do overlay */
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+/* Botões */
+.btn-cta-primary {
+    background-color: #FEC601; /* Amarelo Vibrante */
+    border-color: #FEC601;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 0.5rem; /* Cantos arredondados */
+}
+
+.btn-cta-primary:hover {
+    background-color: #e6b400;
+    border-color: #e6b400;
+    color: #333333;
+}
+
+.btn-cta-secondary {
+    background-color: #FF8C42; /* Laranja Pôr do Sol */
+    border-color: #FF8C42;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border-radius: 0.5rem; /* Cantos arredondados */
+}
+
+.btn-cta-secondary:hover {
+    background-color: #e07b3a;
+    border-color: #e07b3a;
+    color: #FFFFFF;
+}
+
+/* Seções */
+.section-padding {
+    padding: 60px 0;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%; /* Garante que os cards na mesma linha tenham a mesma altura */
+    border-radius: 0.75rem; /* Cantos arredondados para cards */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #56A3A6; /* Azul Céu */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    flex-grow: 1; /* Faz o texto ocupar o espaço disponível */
+}
+
+.card img {
+    border-top-left-radius: 0.75rem; /* Arredondar cantos superiores da imagem no card */
+    border-top-right-radius: 0.75rem;
+}
+
+
+/* Estilos para a Página "Sobre" */
+.about-section img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Estilos para a Página "Ideias para Celebrar" */
+.celebrate-ideas .card {
+    margin-bottom: 20px;
+}
+
+/* Estilos para a Página "Blog" */
+.blog-post-item {
+    margin-bottom: 30px;
+}
+
+.blog-post-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Estilos para a Página "Galeria" */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Altura fixa para as imagens da galeria */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.upload-section {
+    background-color: #f8f9fa; /* Fundo claro */
+    padding: 40px;
+    margin-top: 40px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Footer Refatorado */
+.footer-custom {
+    background-color: #333333; /* Cinza Escuro */
+    color: #FFFFFF;
+    padding: 50px 0 30px 0; /* Aumentado padding superior */
+}
+
+.footer-custom h5 {
+    color: #FEC601; /* Amarelo Vibrante para títulos no footer */
+    margin-bottom: 20px; /* Aumentado margin-bottom */
+    font-size: 1.25rem; /* Aumentado tamanho da fonte */
+    font-weight: bold;
+    text-transform: uppercase; /* Títulos em maiúsculo */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+}
+
+.footer-custom p, .footer-custom .contact-info p, .footer-custom .policy-links span {
+    margin-bottom: 0.75rem; /* Aumentado margin-bottom */
+    font-size: 0.9rem; /* Ajustado tamanho da fonte */
+    line-height: 1.5;
+}
+
+.footer-custom a {
+    color: #FFFFFF; /* Amarelo Vibrante para links */
+    text-decoration: #FEC601;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.footer-custom a:hover {
+    color: #FEC601;
+    text-decoration: underline;
+}
+
+.footer-custom .contact-info p i { /* Ícones de contato */
+    color: #FF8C42; /* Laranja Pôr do Sol */
+    margin-right: 10px; /* Aumentado espaçamento à direita do ícone */
+    font-size: 1.1rem; /* Tamanho dos ícones de contato */
+}
+
+.footer-custom .contact-info a { /* Links de contato específicos */
+    color: #FFFFFF; /* Cor branca para melhor leitura */
+}
+.footer-custom .contact-info a:hover {
+    color: #FEC601; /* Amarelo ao passar o mouse */
+}
+
+
+.footer-custom .social-icons {
+    margin-top: 15px; /* Espaçamento acima do ícone do Instagram */
+}
+
+.footer-custom .social-icons a {
+    color: #FFFFFF;
+    margin: 0 10px; /* Margem horizontal */
+    font-size: 2.2rem; /* Aumentado tamanho do ícone do Instagram */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-custom .social-icons a:hover {
+    color: #FEC601; /* Amarelo Vibrante */
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.footer-custom .policy-links span {
+    color: #adb5bd; /* Cinza claro para os textos de política */
+    cursor: default; /* Cursor padrão, já que não são links */
+}
+
+.footer-custom .copyright-text {
+    margin-top: 30px; /* Espaçamento acima do copyright */
+    padding-top: 20px; /* Espaçamento interno acima do copyright */
+    border-top: 1px solid #444444; /* Linha divisória sutil */
+    font-size: 0.85rem;
+    color: #adb5bd;
+}
+.footer-custom .copyright-text p {
+    margin-bottom: 0.2rem;
+}
+
+
+/* Ajustes para responsividade do Footer */
+@media (max-width: 767.98px) { /* md breakpoint do Bootstrap */
+    .footer-custom .text-md-start,
+    .footer-custom .text-md-end {
+        text-align: center !important;
+    }
+    .footer-custom h5 {
+        margin-top: 20px; /* Adiciona espaço entre colunas no mobile */
+    }
+    .footer-custom .col-md-4:first-child h5 { /* Remove margin-top do primeiro título no mobile */
+        margin-top: 0;
+    }
+    .footer-custom .social-icons {
+        margin-top: 20px;
+        margin-bottom: 20px; /* Espaço abaixo do ícone no mobile */
+    }
+}
+
+
+/* Ajustes para responsividade GERAL (mantendo os anteriores) */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section p {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    .navbar-toggler { /* Melhora visual do toggler */
+        border-color: rgba(255,255,255,0.5);
+    }
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+}
