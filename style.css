@@ -1,17 +1,18 @@
 /* Estilos Globais */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Lato', sans-serif; /* Define Lato como a fonte principal */
     color: #333333;
     line-height: 1.6;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #56A3A6; /* Azul Céu */
+    color: #ff7300; /* Azul Céu */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
 .navbar-custom {
-    background-color: #56A3A6; /* Azul Céu */
+    background-color: #ff7300; /* Azul Céu */
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -32,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Hero Section (Página Inicial) */
 .hero-section {
-    background: url('https://placehold.co/1920x700/56A3A6/FFFFFF?text=Destino+Incrível') no-repeat center center; /* Placeholder com cores do tema */
+    background: url('https://blog.webcontinental.com.br/wp-content/uploads/2023/06/turismo.jpg') no-repeat center center; /* Placeholder com cores do tema */
     background-size: cover;
     color: white;
     padding: 120px 0;
@@ -123,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-title {
-    color: #56A3A6; /* Azul Céu */
+    color: #ff7300; /* Azul Céu */
 }
 
 .card-body {
